@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'PushPopTest' target in the 'PushPopTest' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+	#import "TUIKit.h"
+#endif
