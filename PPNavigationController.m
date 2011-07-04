@@ -78,7 +78,7 @@
 	};
 	
 	if(animated) {
-		// We need to force a flush so that the view's frame is set to the far right before we animate it back.
+		// We need to force a flush so that the view's frame is set to the far right before we animate. Otherwise CA will put this off until the end of the runloop and won't bother animating.
 		[CATransaction begin];
 		viewController.view.frame = CGRectMake(self.view.bounds.size.width, 0.0f, viewController.view.bounds.size.width, viewController.view.bounds.size.height);
 		[CATransaction flush];
