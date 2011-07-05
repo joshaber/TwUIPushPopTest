@@ -45,7 +45,7 @@
 	[super viewDidLoad];
 	
 	self.textRenderer = [[[TUITextRenderer alloc] init] autorelease];
-	self.textRenderer.attributedString = [TUIAttributedString stringWithString:@"First View Controller"];
+	self.textRenderer.attributedString = [TUIAttributedString stringWithString:@"First View Controller. Press any key to push a new view controller."];
 	
 	self.view.textRenderers = [NSArray arrayWithObject:self.textRenderer];
 	

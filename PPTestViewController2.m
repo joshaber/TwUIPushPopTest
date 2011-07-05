@@ -44,7 +44,7 @@
 	[super viewDidLoad];
 	
 	self.textRenderer = [[[TUITextRenderer alloc] init] autorelease];
-	TUIAttributedString *attributedString = [TUIAttributedString stringWithString:@"Second View Controller"];
+	TUIAttributedString *attributedString = [TUIAttributedString stringWithString:@"Second View Controller. Press any key to pop this view controller."];
 	[attributedString setFont:[TUIFont fontWithName:@"HelveticaNeue" size:15.0f]];
 	self.textRenderer.attributedString = attributedString;
 	
